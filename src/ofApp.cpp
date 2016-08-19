@@ -59,7 +59,7 @@ void ofApp::setup(){
   //oF Core Settings
   ofSetLogLevel(OF_LOG_VERBOSE);
   //Display Settings
-	ofSetWindowTitle("Mind Tracker");
+	ofSetWindowTitle("Generative Communicator");
 	ofSetVerticalSync(true);
 	ofSetFrameRate(DRAW_FPS);
 	ofSetBackgroundAuto(false);
@@ -151,7 +151,7 @@ void ofApp::update(){
     return;
   }
 	double meshAddValue = 20.0 * volumeAve;
-	particles.push_back(Particle(randomX, randomY, ofRandom(0.0, volumeIn), ofRandom(0.0, volumeIn)));
+	//particles.push_back(Particle(randomX, randomY, ofRandom(0.0, volumeIn), ofRandom(0.0, volumeIn)));
 	calc_mesh[1][i][j] += meshAddValue;
 }
 
